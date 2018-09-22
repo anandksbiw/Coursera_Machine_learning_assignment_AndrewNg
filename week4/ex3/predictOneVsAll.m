@@ -32,6 +32,17 @@ X = [ones(m, 1) X];
 
 
 
+%%%%%%%%%my code
+
+i=1;
+while(i<=m)
+z=all_theta*X(i,:)';
+h=sigmoid(z);
+[val,index]=max(h);
+p(i)=index;
+i++;
+end;
+%%%%%%%my code
 
 
 
